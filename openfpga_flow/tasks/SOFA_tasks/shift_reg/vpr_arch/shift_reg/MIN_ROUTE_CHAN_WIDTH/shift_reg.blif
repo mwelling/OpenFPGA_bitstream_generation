@@ -1,0 +1,64 @@
+# Benchmark "shift_reg" written by ABC on Tue May  9 11:05:03 2023
+.model shift_reg
+.inputs clock reset control[0] control[1] in 
+.outputs out[0] out[1] out[2] out[3] out[4] \
+out[5] out[6] out[7] 
+
+.latch n28 out[0] re clock 2
+.latch n32 out[1] re clock 2
+.latch n36 out[2] re clock 2
+.latch n40 out[3] re clock 2
+.latch n44 out[4] re clock 2
+.latch n48 out[5] re clock 2
+.latch n52 out[6] re clock 2
+.latch n56 out[7] re clock 2
+
+.names $abc$132$new_n23_ out[1] reset control[0] n28
+-101 1
+1-00 1
+.names out[0] in control[1] $abc$132$new_n23_
+-11 1
+1-0 1
+.names $abc$132$new_n25_ out[2] reset control[0] n32
+-101 1
+1-00 1
+.names out[1] out[0] control[1] $abc$132$new_n25_
+-11 1
+1-0 1
+.names $abc$132$new_n27_ out[3] reset control[0] n36
+-101 1
+1-00 1
+.names out[2] out[1] control[1] $abc$132$new_n27_
+-11 1
+1-0 1
+.names $abc$132$new_n29_ out[4] reset control[0] n40
+-101 1
+1-00 1
+.names out[3] out[2] control[1] $abc$132$new_n29_
+-11 1
+1-0 1
+.names $abc$132$new_n31_ out[5] reset control[0] n44
+-101 1
+1-00 1
+.names out[4] out[3] control[1] $abc$132$new_n31_
+-11 1
+1-0 1
+.names $abc$132$new_n33_ out[6] reset control[0] n48
+-101 1
+1-00 1
+.names out[5] out[4] control[1] $abc$132$new_n33_
+-11 1
+1-0 1
+.names $abc$132$new_n35_ out[7] reset control[0] n52
+-101 1
+1-00 1
+.names out[6] out[5] control[1] $abc$132$new_n35_
+-11 1
+1-0 1
+.names $abc$132$new_n37_ in reset control[0] n56
+-101 1
+1-00 1
+.names out[7] out[6] control[1] $abc$132$new_n37_
+-11 1
+1-0 1
+.end

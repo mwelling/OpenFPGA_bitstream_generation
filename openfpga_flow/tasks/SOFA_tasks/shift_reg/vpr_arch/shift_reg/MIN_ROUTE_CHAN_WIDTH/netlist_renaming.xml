@@ -1,0 +1,51 @@
+<!-- Netlist naming fix-up report --> 
+<netlist>
+	<blocks>
+		<block previous="control[0]" current="control_0_"/>
+		<block previous="control[1]" current="control_1_"/>
+		<block previous="out:out[0]" current="out_out_0_"/>
+		<block previous="out:out[1]" current="out_out_1_"/>
+		<block previous="out:out[2]" current="out_out_2_"/>
+		<block previous="out:out[3]" current="out_out_3_"/>
+		<block previous="out:out[4]" current="out_out_4_"/>
+		<block previous="out:out[5]" current="out_out_5_"/>
+		<block previous="out:out[6]" current="out_out_6_"/>
+		<block previous="out:out[7]" current="out_out_7_"/>
+		<block previous="out[0]" current="out_0_"/>
+		<block previous="out[1]" current="out_1_"/>
+		<block previous="out[2]" current="out_2_"/>
+		<block previous="out[3]" current="out_3_"/>
+		<block previous="out[4]" current="out_4_"/>
+		<block previous="out[5]" current="out_5_"/>
+		<block previous="out[6]" current="out_6_"/>
+		<block previous="out[7]" current="out_7_"/>
+		<block previous="$abc$132$new_n23_" current="_abc_132_new_n23_"/>
+		<block previous="$abc$132$new_n25_" current="_abc_132_new_n25_"/>
+		<block previous="$abc$132$new_n27_" current="_abc_132_new_n27_"/>
+		<block previous="$abc$132$new_n29_" current="_abc_132_new_n29_"/>
+		<block previous="$abc$132$new_n31_" current="_abc_132_new_n31_"/>
+		<block previous="$abc$132$new_n33_" current="_abc_132_new_n33_"/>
+		<block previous="$abc$132$new_n35_" current="_abc_132_new_n35_"/>
+		<block previous="$abc$132$new_n37_" current="_abc_132_new_n37_"/>
+	</blocks>
+	<nets>
+		<net previous="control[0]" current="control_0_"/>
+		<net previous="control[1]" current="control_1_"/>
+		<net previous="out[0]" current="out_0_"/>
+		<net previous="out[1]" current="out_1_"/>
+		<net previous="out[2]" current="out_2_"/>
+		<net previous="out[3]" current="out_3_"/>
+		<net previous="out[4]" current="out_4_"/>
+		<net previous="out[5]" current="out_5_"/>
+		<net previous="out[6]" current="out_6_"/>
+		<net previous="out[7]" current="out_7_"/>
+		<net previous="$abc$132$new_n23_" current="_abc_132_new_n23_"/>
+		<net previous="$abc$132$new_n25_" current="_abc_132_new_n25_"/>
+		<net previous="$abc$132$new_n27_" current="_abc_132_new_n27_"/>
+		<net previous="$abc$132$new_n29_" current="_abc_132_new_n29_"/>
+		<net previous="$abc$132$new_n31_" current="_abc_132_new_n31_"/>
+		<net previous="$abc$132$new_n33_" current="_abc_132_new_n33_"/>
+		<net previous="$abc$132$new_n35_" current="_abc_132_new_n35_"/>
+		<net previous="$abc$132$new_n37_" current="_abc_132_new_n37_"/>
+	</nets>
+</netlist>

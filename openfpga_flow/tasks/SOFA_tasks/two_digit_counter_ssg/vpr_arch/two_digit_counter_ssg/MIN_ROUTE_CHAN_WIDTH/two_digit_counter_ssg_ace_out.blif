@@ -1,0 +1,244 @@
+# Benchmark "two_digit_counter_ssg" written by ABC on Tue May  9 14:41:33 2023
+.model two_digit_counter_ssg
+.inputs clock reset
+.outputs a b c d e f g dp an[0] an[1] an[2] an[3]
+
+.latch        n30   count[0]  2
+.latch        n35   count[1]  2
+.latch        n40   count[2]  2
+.latch        n45   count[3]  2
+.latch        n50   count[4]  2
+.latch        n55   count[5]  2
+.latch        n60   count[6]  2
+.latch        n65   count[7]  2
+.latch        n70   count[8]  2
+.latch        n75   count[9]  2
+.latch        n80  count[10]  2
+.latch        n85  count[11]  2
+.latch        n90  count[12]  2
+.latch        n95  count[13]  2
+.latch       n100  count[14]  2
+.latch       n105  count[15]  2
+.latch       n110  count[16]  2
+.latch       n115  count[17]  2
+.latch       n120   first[0]  2
+.latch       n125   first[1]  2
+.latch       n130   first[2]  2
+.latch       n135   first[3]  2
+.latch       n140  second[0]  2
+.latch       n145  second[1]  2
+.latch       n150  second[2]  2
+.latch       n155  second[3]  2
+.latch       n160   delay[0]  2
+.latch       n165   delay[1]  2
+.latch       n170   delay[2]  2
+.latch       n175   delay[3]  2
+.latch       n180   delay[4]  2
+.latch       n185   delay[5]  2
+
+.names $abc$910$new_n82_ $abc$910$new_n83_ $abc$910$new_n81_ \
+ $abc$910$new_n80_ a
+-0-0 1
+-00- 1
+0111 1
+1-01 1
+.names first[1] second[1] count[17] count[16] $abc$910$new_n80_
+-001 1
+0-00 1
+.names first[2] second[2] count[16] $abc$910$new_n81_
+-01 1
+0-0 1
+.names first[0] second[0] count[16] $abc$910$new_n82_
+-01 1
+0-0 1
+.names first[3] second[3] count[17] count[16] $abc$910$new_n83_
+-001 1
+0-00 1
+.names $abc$910$new_n83_ $abc$910$new_n82_ $abc$910$new_n81_ \
+ $abc$910$new_n80_ b
+-001 1
+-100 1
+0--0 1
+0-0- 1
+.names $abc$910$new_n82_ $abc$910$new_n83_ $abc$910$new_n80_ \
+ $abc$910$new_n81_ c
+-0-0 1
+-00- 1
+1-01 1
+.names $abc$910$new_n82_ $abc$910$new_n83_ $abc$910$new_n81_ \
+ $abc$910$new_n80_ d
+-0-0 1
+-00- 1
+0-00 1
+0111 1
+1-01 1
+.names $abc$910$new_n83_ $abc$910$new_n81_ $abc$910$new_n80_ \
+ $abc$910$new_n82_ e
+-111 0
+1-01 0
+.names $abc$910$new_n80_ $abc$910$new_n82_ $abc$910$new_n83_ \
+ $abc$910$new_n81_ f
+--00 1
+-011 1
+0--1 1
+00-- 1
+.names $abc$910$new_n82_ $abc$910$new_n80_ $abc$910$new_n81_ \
+ $abc$910$new_n83_ g
+-111 1
+0001 1
+.names delay[5] delay[4] $abc$910$new_n91_ dp
+111 1
+.names delay[3] $abc$910$new_n92_ $abc$910$new_n91_
+11 1
+.names delay[2] delay[1] delay[0] $abc$910$new_n92_
+111 1
+.names reset count[0] n30
+00 1
+.names reset count[1] count[0] n35
+001 1
+010 1
+.names count[1] count[0] reset count[2] n40
+-001 1
+0-01 1
+1100 1
+.names reset count[3] $abc$910$new_n97_ n45
+001 1
+010 1
+.names count[2] count[1] count[0] $abc$910$new_n97_
+111 1
+.names reset count[4] $abc$910$new_n99_ n50
+001 1
+010 1
+.names count[3] count[2] count[1] count[0] $abc$910$new_n99_
+1111 1
+.names count[4] $abc$910$new_n99_ reset count[5] n55
+-001 1
+0-01 1
+1100 1
+.names reset count[6] $abc$910$new_n102_ n60
+001 1
+010 1
+.names count[5] count[4] $abc$910$new_n99_ $abc$910$new_n102_
+111 1
+.names reset count[7] $abc$910$new_n104_ n65
+001 1
+010 1
+.names count[6] count[5] count[4] $abc$910$new_n99_ $abc$910$new_n104_
+1111 1
+.names count[7] $abc$910$new_n104_ reset count[8] n70
+-001 1
+0-01 1
+1100 1
+.names reset count[9] $abc$910$new_n107_ n75
+001 1
+010 1
+.names count[8] count[7] $abc$910$new_n104_ $abc$910$new_n107_
+111 1
+.names reset count[10] $abc$910$new_n109_ n80
+001 1
+010 1
+.names count[9] count[8] count[7] $abc$910$new_n104_ $abc$910$new_n109_
+1111 1
+.names count[10] $abc$910$new_n109_ reset count[11] n85
+-001 1
+0-01 1
+1100 1
+.names reset count[12] $abc$910$new_n112_ n90
+001 1
+010 1
+.names count[11] count[10] $abc$910$new_n109_ $abc$910$new_n112_
+111 1
+.names reset count[13] $abc$910$new_n114_ n95
+001 1
+010 1
+.names count[12] count[11] count[10] $abc$910$new_n109_ $abc$910$new_n114_
+1111 1
+.names count[13] $abc$910$new_n114_ reset count[14] n100
+-001 1
+0-01 1
+1100 1
+.names reset count[15] $abc$910$new_n117_ n105
+001 1
+010 1
+.names count[14] count[13] $abc$910$new_n114_ $abc$910$new_n117_
+111 1
+.names reset count[16] $abc$910$new_n119_ n110
+001 1
+010 1
+.names count[15] count[14] count[13] $abc$910$new_n114_ $abc$910$new_n119_
+1111 1
+.names count[16] $abc$910$new_n119_ reset count[17] n115
+-001 1
+0-01 1
+1100 1
+.names reset first[0] dp n120
+001 1
+010 1
+.names first[0] dp first[1] $abc$910$new_n123_ n125
+-011 1
+0-11 1
+1101 1
+.names reset $abc$910$new_n124_ $abc$910$new_n123_
+00 1
+.names first[0] $abc$910$new_n125_ dp $abc$910$new_n124_
+111 1
+.names first[2] first[1] first[3] $abc$910$new_n125_
+001 1
+.names reset first[2] $abc$910$new_n127_ n130
+001 1
+010 1
+.names first[1] first[0] dp $abc$910$new_n127_
+111 1
+.names first[2] $abc$910$new_n127_ first[3] $abc$910$new_n123_ n135
+-011 1
+0-11 1
+1101 1
+.names reset second[0] $abc$910$new_n124_ n140
+001 1
+010 1
+.names second[0] $abc$910$new_n124_ second[1] $abc$910$new_n131_ n145
+-011 1
+0-11 1
+1101 1
+.names $abc$910$new_n132_ $abc$910$new_n124_ reset $abc$910$new_n131_
+-00 1
+0-0 1
+.names second[2] second[1] second[0] second[3] $abc$910$new_n132_
+0011 1
+.names reset second[2] $abc$910$new_n134_ n150
+001 1
+010 1
+.names second[1] second[0] $abc$910$new_n124_ $abc$910$new_n134_
+111 1
+.names second[2] $abc$910$new_n134_ second[3] $abc$910$new_n131_ n155
+-011 1
+0-11 1
+1101 1
+.names delay[0] reset n160
+00 1
+.names reset delay[1] delay[0] n165
+001 1
+010 1
+.names delay[1] delay[0] reset delay[2] n170
+-001 1
+0-01 1
+1100 1
+.names reset delay[3] $abc$910$new_n92_ n175
+001 1
+010 1
+.names reset delay[4] $abc$910$new_n91_ n180
+001 1
+010 1
+.names delay[4] $abc$910$new_n91_ reset delay[5] n185
+-001 1
+0-01 1
+1100 1
+.names count[17] count[16] an[0]
+00 0
+.names count[17] count[16] an[1]
+01 0
+.names count[16] count[17] an[2]
+01 0
+.names count[17] count[16] an[3]
+11 0
+.end

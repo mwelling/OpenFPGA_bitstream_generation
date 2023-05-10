@@ -1,0 +1,1 @@
+iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 -o compiled_and2_9bits ./SRC/and2_9bits_include_netlists.v -s and2_9bits_autocheck_top_tb -I ./SRC 

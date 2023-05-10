@@ -1,0 +1,21 @@
+# Benchmark "decoder_3_to_8" written by ABC on Thu Mar 30 13:45:42 2023
+.model decoder_3_to_8
+.inputs in[0] in[1] in[2] en
+.outputs out[0] out[1] out[2] out[3] out[4] out[5] out[6] out[7]
+.names in[0] in[1] in[2] en out[0]
+0001 1
+.names in[1] in[2] en in[0] out[1]
+0011 1
+.names in[0] in[2] en in[1] out[2]
+0011 1
+.names in[2] in[0] in[1] en out[3]
+0111 1
+.names in[0] in[1] en in[2] out[4]
+0011 1
+.names in[1] in[0] in[2] en out[5]
+0111 1
+.names in[0] in[2] in[1] en out[6]
+0111 1
+.names en in[0] in[1] in[2] out[7]
+1111 1
+.end

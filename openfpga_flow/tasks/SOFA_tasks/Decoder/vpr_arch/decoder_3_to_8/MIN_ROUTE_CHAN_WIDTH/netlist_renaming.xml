@@ -1,0 +1,37 @@
+<!-- Netlist naming fix-up report --> 
+<netlist>
+	<blocks>
+		<block previous="in[0]" current="in_0_"/>
+		<block previous="in[1]" current="in_1_"/>
+		<block previous="in[2]" current="in_2_"/>
+		<block previous="out:out[0]" current="out_out_0_"/>
+		<block previous="out:out[1]" current="out_out_1_"/>
+		<block previous="out:out[2]" current="out_out_2_"/>
+		<block previous="out:out[3]" current="out_out_3_"/>
+		<block previous="out:out[4]" current="out_out_4_"/>
+		<block previous="out:out[5]" current="out_out_5_"/>
+		<block previous="out:out[6]" current="out_out_6_"/>
+		<block previous="out:out[7]" current="out_out_7_"/>
+		<block previous="out[0]" current="out_0_"/>
+		<block previous="out[1]" current="out_1_"/>
+		<block previous="out[2]" current="out_2_"/>
+		<block previous="out[3]" current="out_3_"/>
+		<block previous="out[4]" current="out_4_"/>
+		<block previous="out[5]" current="out_5_"/>
+		<block previous="out[6]" current="out_6_"/>
+		<block previous="out[7]" current="out_7_"/>
+	</blocks>
+	<nets>
+		<net previous="in[0]" current="in_0_"/>
+		<net previous="in[1]" current="in_1_"/>
+		<net previous="in[2]" current="in_2_"/>
+		<net previous="out[0]" current="out_0_"/>
+		<net previous="out[1]" current="out_1_"/>
+		<net previous="out[2]" current="out_2_"/>
+		<net previous="out[3]" current="out_3_"/>
+		<net previous="out[4]" current="out_4_"/>
+		<net previous="out[5]" current="out_5_"/>
+		<net previous="out[6]" current="out_6_"/>
+		<net previous="out[7]" current="out_7_"/>
+	</nets>
+</netlist>

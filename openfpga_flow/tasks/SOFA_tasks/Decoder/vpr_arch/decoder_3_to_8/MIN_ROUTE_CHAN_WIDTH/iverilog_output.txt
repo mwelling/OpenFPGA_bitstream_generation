@@ -1,0 +1,1 @@
+iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 -o compiled_decoder ./SRC/decoder_3_to_8_include_netlists.v -s decoder_3_to_8_autocheck_top_tb -I ./SRC 

@@ -1,0 +1,5 @@
+<pin_constraints>
+  <set_io pin="gfpga_pad_GPIO_PAD[20]" net="a" />
+  <set_io pin="gfpga_pad_GPIO_PAD[21]" net="b"/>
+  <set_io pin="gfpga_pad_GPIO_PAD[22]" net="c"/>
+</pin_constraints>

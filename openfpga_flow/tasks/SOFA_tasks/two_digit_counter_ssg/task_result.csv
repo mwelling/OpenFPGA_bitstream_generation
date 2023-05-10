@@ -1,0 +1,2 @@
+name,TotalRunTime,average_net_length,clb_blocks,io_blocks,packing_time,placement_time,routing_time,total_logic_block_area,total_routing_area,total_routing_time,total_wire_length
+00_two_digit_counter_ssg_MIN_ROUTE_CHAN_WIDTH,1,18.9706,9,14,0.01,0.00,0.02,485046,373865,0.02,1290
