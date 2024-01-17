@@ -41,13 +41,18 @@ Make sure to change the following in ``task.conf`` according to the design:
     - In ``[BENCHMARKS]``, change ``bench0`` to point to the path of the verilog file/s of the design you want to implement 
     - In ``[SYNTHESIS_PARAM]`` change ``bench0_top`` to be the name of the top module of the design 
 
+6. After placing the rtl and pcf and editing task.conf, you should just run 
+```
+cd OpenFPGA
+python3 openfpga_flow/scripts/run_fpga_task.py SOFA_tasks
+```
 ## VPR and Yosys results for different designs   
 
 |   Design        | clb_blocks  | io_blocks | cells | $_DFF_P_ | $lut |
 | --------------- | ----------- | --------- |-------|----------|------|
 | [fpga_ram8x20](https://github.com/NouranAbdelaziz/OpenFPGA/blob/SOFA/openfpga_flow/benchmarks/micro_benchmark/fpga_ram8x20.v)    | 41          | 23        | 484 | 168 | 316 |
 | [fpga_ram8x16](https://github.com/NouranAbdelaziz/OpenFPGA/blob/SOFA/openfpga_flow/benchmarks/micro_benchmark/fpga_ram8x16.v)    | 33          | 22        | 388 | 136 | 252 |
-| [fpga_mac_6x6]()    | 14          | 26        | 121 | 13 | 108 |
+| [fpga_mac_6x6](https://github.com/NouranAbdelaziz/OpenFPGA/blob/SOFA/openfpga_flow/benchmarks/micro_benchmark/fpga_mac_6x6.v)    | 14          | 26        | 121 | 13 | 108 |
 | [fpga_LFSR](https://github.com/NouranAbdelaziz/OpenFPGA/blob/SOFA/openfpga_flow/benchmarks/micro_benchmark/fpga_LFSR.v)       | 8           | 25        | 108 | 48 | 60 |
 | [fpga_seq_mul](https://github.com/NouranAbdelaziz/OpenFPGA/blob/SOFA/openfpga_flow/benchmarks/micro_benchmark/fpga_seq_mul.v)    | 8           | 34        | 93 | 28 | 65 |
 | [fpga_mac](https://github.com/NouranAbdelaziz/OpenFPGA/blob/SOFA/openfpga_flow/benchmarks/micro_benchmark/fpga_mac.v)        | 7           | 18        | 56 | 9 | 47 |
@@ -55,8 +60,5 @@ Make sure to change the following in ``task.conf`` according to the design:
 | [fpga_ring16](https://github.com/NouranAbdelaziz/OpenFPGA/blob/SOFA/openfpga_flow/benchmarks/micro_benchmark/fpga_ring16.v)     | 7           | 17        | 0 | 40 | 52 |
 | [fpga_pwm8](https://github.com/NouranAbdelaziz/OpenFPGA/blob/SOFA/openfpga_flow/benchmarks/micro_benchmark/fpga_pwm8.v)       | 3           | 18        | 31 | 9 | 22 |
 | [ALU_4bits](https://github.com/NouranAbdelaziz/OpenFPGA/blob/SOFA/openfpga_flow/benchmarks/micro_benchmark/ALU_4bits.v)       | 2           | 14        | 12 |  | 12 |
-6. After placing the rtl and pcf and editing task.conf, you should just run 
-```
-cd OpenFPGA
-python3 openfpga_flow/scripts/run_fpga_task.py SOFA_tasks
-```
+
+You can check results in details in [this sheet](https://docs.google.com/spreadsheets/d/1t5miIMCfXTlODXg6BvoLEqbKspuiNL8Z_V40bmyjbRs/edit#gid=0)
