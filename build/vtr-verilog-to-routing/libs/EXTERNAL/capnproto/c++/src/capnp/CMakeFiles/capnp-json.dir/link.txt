@@ -1,0 +1,2 @@
+ccache "/usr/bin/gcc-ar-11" cr libcapnp-json.a CMakeFiles/capnp-json.dir/compat/json.c++.o CMakeFiles/capnp-json.dir/compat/json.capnp.c++.o
+ccache "/usr/bin/gcc-ranlib-11" libcapnp-json.a

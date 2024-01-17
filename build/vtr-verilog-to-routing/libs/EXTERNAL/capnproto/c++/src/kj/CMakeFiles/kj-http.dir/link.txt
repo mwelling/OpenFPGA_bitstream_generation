@@ -1,0 +1,2 @@
+ccache "/usr/bin/gcc-ar-11" cr libkj-http.a CMakeFiles/kj-http.dir/compat/url.c++.o CMakeFiles/kj-http.dir/compat/http.c++.o
+ccache "/usr/bin/gcc-ranlib-11" libkj-http.a

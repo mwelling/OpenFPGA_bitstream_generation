@@ -1,0 +1,2 @@
+ccache "/usr/bin/gcc-ar-11" cr libfasm.a CMakeFiles/fasm.dir/src/fasm.cpp.o CMakeFiles/fasm.dir/src/lut.cpp.o CMakeFiles/fasm.dir/src/parameters.cpp.o CMakeFiles/fasm.dir/src/fasm_utils.cpp.o
+ccache "/usr/bin/gcc-ranlib-11" libfasm.a

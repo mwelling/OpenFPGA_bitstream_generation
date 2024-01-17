@@ -1,0 +1,2 @@
+ccache "/usr/bin/gcc-ar-11" cr libsdcparse.a CMakeFiles/libsdcparse.dir/src/sdc_common.cpp.o CMakeFiles/libsdcparse.dir/src/sdc_error.cpp.o CMakeFiles/libsdcparse.dir/src/sdc_lexer.cpp.o CMakeFiles/libsdcparse.dir/src/sdcparse.cpp.o CMakeFiles/libsdcparse.dir/sdc_lexer.gen.cpp.o CMakeFiles/libsdcparse.dir/sdc_parser.gen.cpp.o
+ccache "/usr/bin/gcc-ranlib-11" libsdcparse.a

@@ -1,0 +1,2 @@
+ccache "/usr/bin/gcc-ar-11" cr libargparse.a CMakeFiles/libargparse.dir/src/argparse.cpp.o CMakeFiles/libargparse.dir/src/argparse_formatter.cpp.o CMakeFiles/libargparse.dir/src/argparse_util.cpp.o
+ccache "/usr/bin/gcc-ranlib-11" libargparse.a

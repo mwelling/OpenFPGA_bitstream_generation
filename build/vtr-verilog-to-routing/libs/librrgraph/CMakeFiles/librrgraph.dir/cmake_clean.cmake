@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/librrgraph.dir/src/base/check_rr_graph.cpp.o"
+  "CMakeFiles/librrgraph.dir/src/base/check_rr_graph.cpp.o.d"
+  "CMakeFiles/librrgraph.dir/src/base/check_rr_graph_obj.cpp.o"
+  "CMakeFiles/librrgraph.dir/src/base/check_rr_graph_obj.cpp.o.d"
+  "CMakeFiles/librrgraph.dir/src/base/get_parallel_segs.cpp.o"
+  "CMakeFiles/librrgraph.dir/src/base/get_parallel_segs.cpp.o.d"
+  "CMakeFiles/librrgraph.dir/src/base/rr_graph_builder.cpp.o"
+  "CMakeFiles/librrgraph.dir/src/base/rr_graph_builder.cpp.o.d"
+  "CMakeFiles/librrgraph.dir/src/base/rr_graph_obj.cpp.o"
+  "CMakeFiles/librrgraph.dir/src/base/rr_graph_obj.cpp.o.d"
+  "CMakeFiles/librrgraph.dir/src/base/rr_graph_storage.cpp.o"
+  "CMakeFiles/librrgraph.dir/src/base/rr_graph_storage.cpp.o.d"
+  "CMakeFiles/librrgraph.dir/src/base/rr_graph_utils.cpp.o"
+  "CMakeFiles/librrgraph.dir/src/base/rr_graph_utils.cpp.o.d"
+  "CMakeFiles/librrgraph.dir/src/base/rr_graph_view.cpp.o"
+  "CMakeFiles/librrgraph.dir/src/base/rr_graph_view.cpp.o.d"
+  "CMakeFiles/librrgraph.dir/src/base/rr_metadata.cpp.o"
+  "CMakeFiles/librrgraph.dir/src/base/rr_metadata.cpp.o.d"
+  "CMakeFiles/librrgraph.dir/src/base/rr_node.cpp.o"
+  "CMakeFiles/librrgraph.dir/src/base/rr_node.cpp.o.d"
+  "CMakeFiles/librrgraph.dir/src/base/rr_rc_data.cpp.o"
+  "CMakeFiles/librrgraph.dir/src/base/rr_rc_data.cpp.o.d"
+  "CMakeFiles/librrgraph.dir/src/base/rr_spatial_lookup.cpp.o"
+  "CMakeFiles/librrgraph.dir/src/base/rr_spatial_lookup.cpp.o.d"
+  "CMakeFiles/librrgraph.dir/src/io/rr_graph_reader.cpp.o"
+  "CMakeFiles/librrgraph.dir/src/io/rr_graph_reader.cpp.o.d"
+  "CMakeFiles/librrgraph.dir/src/io/rr_graph_writer.cpp.o"
+  "CMakeFiles/librrgraph.dir/src/io/rr_graph_writer.cpp.o.d"
+  "CMakeFiles/librrgraph.dir/src/utils/alloc_and_load_rr_indexed_data.cpp.o"
+  "CMakeFiles/librrgraph.dir/src/utils/alloc_and_load_rr_indexed_data.cpp.o.d"
+  "CMakeFiles/librrgraph.dir/src/utils/describe_rr_node.cpp.o"
+  "CMakeFiles/librrgraph.dir/src/utils/describe_rr_node.cpp.o.d"
+  "librrgraph.a"
+  "librrgraph.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/librrgraph.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

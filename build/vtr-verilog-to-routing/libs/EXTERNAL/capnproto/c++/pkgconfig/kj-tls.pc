@@ -1,0 +1,11 @@
+prefix=/home/nouran/OpenFPGA/build
+exec_prefix=
+libdir=/home/nouran/OpenFPGA/build/lib
+includedir=/home/nouran/OpenFPGA/build/include
+
+Name: KJ TLS Adapters
+Description: Basic utility library called KJ (TLS part)
+Version: 0.9.1
+Libs: -L${libdir} -lkj-tls -pthread  
+Requires: kj-async = 0.9.1
+Cflags: -I${includedir} -pthread  

@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nouran/OpenFPGA/build/vtr-verilog-to-routing/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+

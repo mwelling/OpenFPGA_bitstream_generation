@@ -1,0 +1,11 @@
+prefix=/home/nouran/OpenFPGA/build
+exec_prefix=
+libdir=/home/nouran/OpenFPGA/build/lib
+includedir=/home/nouran/OpenFPGA/build/include
+
+Name: Cap'n Proto JSON
+Description: JSON encoder and decoder for Cap'n Proto objects
+Version: 0.9.1
+Libs: -L${libdir} -lcapnp-json
+Requires: capnp = 0.9.1 kj = 0.9.1
+Cflags: -I${includedir}

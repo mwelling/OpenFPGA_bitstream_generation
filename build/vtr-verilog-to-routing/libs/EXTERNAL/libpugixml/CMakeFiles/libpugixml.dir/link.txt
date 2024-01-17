@@ -1,0 +1,2 @@
+ccache "/usr/bin/gcc-ar-11" cr libpugixml.a CMakeFiles/libpugixml.dir/src/pugixml.cpp.o
+ccache "/usr/bin/gcc-ranlib-11" libpugixml.a

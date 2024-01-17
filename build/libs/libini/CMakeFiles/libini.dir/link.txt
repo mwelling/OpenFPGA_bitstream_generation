@@ -1,0 +1,2 @@
+ccache /usr/bin/ar qc libini.a 
+ccache /usr/bin/ranlib libini.a

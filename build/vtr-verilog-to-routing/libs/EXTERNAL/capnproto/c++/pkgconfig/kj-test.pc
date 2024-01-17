@@ -1,0 +1,11 @@
+prefix=/home/nouran/OpenFPGA/build
+exec_prefix=
+libdir=/home/nouran/OpenFPGA/build/lib
+includedir=/home/nouran/OpenFPGA/build/include
+
+Name: KJ Test Framework
+Description: Basic utility library called KJ (test part)
+Version: 0.9.1
+Libs: -L${libdir} -lkj-test -pthread  
+Requires: kj = 0.9.1
+Cflags: -I${includedir} -pthread  

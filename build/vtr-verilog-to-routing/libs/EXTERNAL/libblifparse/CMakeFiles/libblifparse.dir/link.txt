@@ -1,0 +1,2 @@
+ccache "/usr/bin/gcc-ar-11" cr libblifparse.a CMakeFiles/libblifparse.dir/src/blif_common.cpp.o CMakeFiles/libblifparse.dir/src/blif_error.cpp.o CMakeFiles/libblifparse.dir/src/blif_lexer.cpp.o CMakeFiles/libblifparse.dir/src/blif_pretty_print.cpp.o CMakeFiles/libblifparse.dir/src/blifparse.cpp.o CMakeFiles/libblifparse.dir/blif_lexer.gen.cpp.o CMakeFiles/libblifparse.dir/blif_parser.gen.cpp.o
+ccache "/usr/bin/gcc-ranlib-11" libblifparse.a

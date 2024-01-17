@@ -1,0 +1,2 @@
+ccache "/usr/bin/gcc-ar-11" cr libkj-test.a CMakeFiles/kj-test.dir/test.c++.o
+ccache "/usr/bin/gcc-ranlib-11" libkj-test.a

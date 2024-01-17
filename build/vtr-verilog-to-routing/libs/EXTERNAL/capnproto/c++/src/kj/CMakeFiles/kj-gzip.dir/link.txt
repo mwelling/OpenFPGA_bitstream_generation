@@ -1,0 +1,2 @@
+ccache "/usr/bin/gcc-ar-11" cr libkj-gzip.a CMakeFiles/kj-gzip.dir/compat/gzip.c++.o
+ccache "/usr/bin/gcc-ranlib-11" libkj-gzip.a

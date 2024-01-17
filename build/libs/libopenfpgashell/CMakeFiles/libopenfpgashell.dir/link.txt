@@ -1,0 +1,2 @@
+ccache "/usr/bin/gcc-ar-11" cr libopenfpgashell.a CMakeFiles/libopenfpgashell.dir/src/command.cpp.o CMakeFiles/libopenfpgashell.dir/src/command_context.cpp.o CMakeFiles/libopenfpgashell.dir/src/command_echo.cpp.o CMakeFiles/libopenfpgashell.dir/src/command_parser.cpp.o
+ccache "/usr/bin/gcc-ranlib-11" libopenfpgashell.a

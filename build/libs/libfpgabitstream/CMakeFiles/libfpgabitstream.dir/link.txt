@@ -1,0 +1,2 @@
+ccache "/usr/bin/gcc-ar-11" cr libfpgabitstream.a CMakeFiles/libfpgabitstream.dir/src/bitstream_manager.cpp.o CMakeFiles/libfpgabitstream.dir/src/bitstream_manager_utils.cpp.o CMakeFiles/libfpgabitstream.dir/src/read_xml_arch_bitstream.cpp.o CMakeFiles/libfpgabitstream.dir/src/report_arch_bitstream_distribution.cpp.o CMakeFiles/libfpgabitstream.dir/src/write_xml_arch_bitstream.cpp.o
+ccache "/usr/bin/gcc-ranlib-11" libfpgabitstream.a

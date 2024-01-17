@@ -1,0 +1,2 @@
+ccache "/usr/bin/gcc-ar-11" cr libvqm2blif.a CMakeFiles/libvqm2blif.dir/src/base/cleanup.cpp.o CMakeFiles/libvqm2blif.dir/src/base/hard_block_recog.cpp.o CMakeFiles/libvqm2blif.dir/src/base/hash.cpp.o CMakeFiles/libvqm2blif.dir/src/base/lut_recog.cpp.o CMakeFiles/libvqm2blif.dir/src/base/lut_stats.cpp.o CMakeFiles/libvqm2blif.dir/src/base/preprocess.cpp.o CMakeFiles/libvqm2blif.dir/src/base/vqm2blif_util.cpp.o
+ccache "/usr/bin/gcc-ranlib-11" libvqm2blif.a

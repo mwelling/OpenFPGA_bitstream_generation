@@ -1,0 +1,12 @@
+prefix=/home/nouran/OpenFPGA/build
+exec_prefix=
+libdir=/home/nouran/OpenFPGA/build/lib
+includedir=/home/nouran/OpenFPGA/build/include
+
+Name: Cap'n Proto
+Description: Insanely fast serialization system
+Version: 0.9.1
+Libs: -L${libdir} -lcapnp -pthread  
+Libs.private: 
+Requires: kj = 0.9.1
+Cflags: -I${includedir} -pthread  

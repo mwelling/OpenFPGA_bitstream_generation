@@ -1,0 +1,2 @@
+ccache "/usr/bin/gcc-ar-11" cr libvqm.a CMakeFiles/libvqm.dir/vqm_common.c.o CMakeFiles/libvqm.dir/vqm_dll.cpp.o CMakeFiles/libvqm.dir/vqm_lexer.gen.c.o CMakeFiles/libvqm.dir/vqm_parser.gen.c.o
+ccache "/usr/bin/gcc-ranlib-11" libvqm.a

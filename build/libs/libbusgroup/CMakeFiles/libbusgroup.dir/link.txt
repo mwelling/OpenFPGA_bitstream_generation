@@ -1,0 +1,2 @@
+ccache "/usr/bin/gcc-ar-11" cr libbusgroup.a CMakeFiles/libbusgroup.dir/src/bus_group.cpp.o CMakeFiles/libbusgroup.dir/src/read_xml_bus_group.cpp.o CMakeFiles/libbusgroup.dir/src/write_xml_bus_group.cpp.o
+ccache "/usr/bin/gcc-ranlib-11" libbusgroup.a

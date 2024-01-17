@@ -1,0 +1,2 @@
+ccache "/usr/bin/gcc-ar-11" cr libcapnp-websocket.a CMakeFiles/capnp-websocket.dir/compat/websocket-rpc.c++.o
+ccache "/usr/bin/gcc-ranlib-11" libcapnp-websocket.a

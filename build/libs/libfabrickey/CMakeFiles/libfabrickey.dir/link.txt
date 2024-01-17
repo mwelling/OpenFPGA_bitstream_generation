@@ -1,0 +1,2 @@
+ccache "/usr/bin/gcc-ar-11" cr libfabrickey.a CMakeFiles/libfabrickey.dir/src/fabric_key.cpp.o CMakeFiles/libfabrickey.dir/src/read_xml_fabric_key.cpp.o CMakeFiles/libfabrickey.dir/src/write_xml_fabric_key.cpp.o
+ccache "/usr/bin/gcc-ranlib-11" libfabrickey.a

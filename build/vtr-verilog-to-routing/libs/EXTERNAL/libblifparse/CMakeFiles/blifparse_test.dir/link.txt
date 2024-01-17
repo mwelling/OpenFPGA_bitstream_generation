@@ -1,0 +1,1 @@
+ccache /usr/bin/c++ -O3 -DNDEBUG -flto -fno-fat-lto-objects -Wno-null-dereference CMakeFiles/blifparse_test.dir/src/main.cpp.o -o blifparse_test  libblifparse.a 

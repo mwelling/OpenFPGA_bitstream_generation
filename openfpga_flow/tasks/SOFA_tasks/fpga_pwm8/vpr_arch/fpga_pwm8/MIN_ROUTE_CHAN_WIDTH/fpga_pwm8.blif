@@ -1,0 +1,94 @@
+# Benchmark "fpga_pwm8" written by ABC on Sun Jan 14 11:47:50 2024
+.model fpga_pwm8
+.inputs clk duty[0] duty[1] duty[2] duty[3] \
+duty[4] duty[5] duty[6] duty[7] period[0] period[1] \
+period[2] period[3] period[4] period[5] period[6] \
+period[7] 
+.outputs pwm 
+
+.latch n38 pwm re clk 0
+.latch n42 cntr[0] re clk 0
+.latch n47 cntr[1] re clk 0
+.latch n52 cntr[2] re clk 0
+.latch n57 cntr[3] re clk 0
+.latch n62 cntr[4] re clk 0
+.latch n67 cntr[5] re clk 0
+.latch n72 cntr[6] re clk 0
+.latch n77 cntr[7] re clk 0
+
+.names cntr[0] period[0] $abc$283$new_n37_ n42
+-11 1
+0-0 1
+.names cntr[7] $abc$283$new_n38_ $abc$283$new_n37_
+01 1
+.names cntr[5] cntr[4] cntr[6] $abc$283$new_n39_ $abc$283$new_n38_
+0001 1
+.names cntr[1] cntr[3] cntr[2] cntr[0] $abc$283$new_n39_
+0000 1
+.names period[1] cntr[1] cntr[0] $abc$283$new_n37_ n47
+-000 1
+-110 1
+1--1 1
+.names $abc$283$new_n42_ period[2] $abc$283$new_n37_ n52
+-11 1
+0-0 1
+.names cntr[1] cntr[0] cntr[2] $abc$283$new_n42_
+-10 1
+001 1
+1-0 1
+.names $abc$283$new_n44_ period[3] $abc$283$new_n37_ n57
+-11 1
+0-0 1
+.names cntr[1] cntr[2] cntr[0] cntr[3] $abc$283$new_n44_
+--10 1
+-1-0 1
+0001 1
+1--0 1
+.names period[4] cntr[4] $abc$283$new_n39_ $abc$283$new_n37_ n62
+-010 1
+-100 1
+1--1 1
+.names period[5] $abc$283$new_n37_ $abc$283$new_n47_ n67
+-00 1
+1-0 1
+.names cntr[4] $abc$283$new_n39_ cntr[5] $abc$283$new_n47_
+-00 1
+011 1
+1-0 1
+.names period[6] cntr[7] cntr[6] $abc$283$new_n49_ n72
+--10 1
+-101 1
+1-01 1
+.names cntr[5] cntr[4] $abc$283$new_n39_ $abc$283$new_n49_
+001 1
+.names period[7] cntr[7] $abc$283$new_n38_ n77
+-10 1
+101 1
+.names duty[5] cntr[5] $abc$283$new_n58_ $abc$283$new_n57_ \
+ $abc$283$new_n56_
+0011 1
+1111 1
+.names cntr[1] duty[1] duty[6] cntr[6] $abc$283$new_n57_
+--01 0
+01-- 0
+.names duty[1] cntr[1] duty[0] cntr[0] $abc$283$new_n58_
+--01 0
+--10 0
+01-- 0
+.names cntr[6] duty[6] duty[4] cntr[4] $abc$283$new_n59_
+--01 0
+--10 0
+01-- 0
+.names duty[3] cntr[3] duty[2] cntr[2] $abc$283$new_n60_
+0000 1
+0011 1
+1100 1
+1111 1
+.names duty[7] cntr[7] $abc$283$new_n59_ $abc$283$new_n60_ \
+ $abc$283$new_n61_
+0011 1
+1111 1
+.names $abc$283$new_n37_ pwm $abc$283$new_n56_ $abc$283$new_n61_ n38
+--11 1
+01-- 1
+.end

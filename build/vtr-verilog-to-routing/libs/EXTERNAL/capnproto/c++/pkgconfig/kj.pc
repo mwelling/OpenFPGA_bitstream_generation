@@ -1,0 +1,10 @@
+prefix=/home/nouran/OpenFPGA/build
+exec_prefix=
+libdir=/home/nouran/OpenFPGA/build/lib
+includedir=/home/nouran/OpenFPGA/build/include
+
+Name: KJ Framework Library
+Description: Basic utility library called KJ
+Version: 0.9.1
+Libs: -L${libdir} -lkj -pthread  
+Cflags: -I${includedir} -pthread  

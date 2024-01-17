@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/test_vpr.dir/test/main.cpp.o"
+  "CMakeFiles/test_vpr.dir/test/main.cpp.o.d"
+  "CMakeFiles/test_vpr.dir/test/test_bfs_routing.cpp.o"
+  "CMakeFiles/test_vpr.dir/test/test_bfs_routing.cpp.o.d"
+  "CMakeFiles/test_vpr.dir/test/test_clustered_netlist.cpp.o"
+  "CMakeFiles/test_vpr.dir/test/test_clustered_netlist.cpp.o.d"
+  "CMakeFiles/test_vpr.dir/test/test_connection_router.cpp.o"
+  "CMakeFiles/test_vpr.dir/test/test_connection_router.cpp.o.d"
+  "CMakeFiles/test_vpr.dir/test/test_edge_groups.cpp.o"
+  "CMakeFiles/test_vpr.dir/test/test_edge_groups.cpp.o.d"
+  "CMakeFiles/test_vpr.dir/test/test_interchange_device.cpp.o"
+  "CMakeFiles/test_vpr.dir/test/test_interchange_device.cpp.o.d"
+  "CMakeFiles/test_vpr.dir/test/test_interchange_netlist.cpp.o"
+  "CMakeFiles/test_vpr.dir/test/test_interchange_netlist.cpp.o.d"
+  "CMakeFiles/test_vpr.dir/test/test_map_lookahead_serdes.cpp.o"
+  "CMakeFiles/test_vpr.dir/test/test_map_lookahead_serdes.cpp.o.d"
+  "CMakeFiles/test_vpr.dir/test/test_noc_storage.cpp.o"
+  "CMakeFiles/test_vpr.dir/test/test_noc_storage.cpp.o.d"
+  "CMakeFiles/test_vpr.dir/test/test_noc_traffic_flows.cpp.o"
+  "CMakeFiles/test_vpr.dir/test/test_noc_traffic_flows.cpp.o.d"
+  "CMakeFiles/test_vpr.dir/test/test_place_delay_model_serdes.cpp.o"
+  "CMakeFiles/test_vpr.dir/test/test_place_delay_model_serdes.cpp.o.d"
+  "CMakeFiles/test_vpr.dir/test/test_post_verilog.cpp.o"
+  "CMakeFiles/test_vpr.dir/test/test_post_verilog.cpp.o.d"
+  "CMakeFiles/test_vpr.dir/test/test_read_xml_noc_traffic_flows_file.cpp.o"
+  "CMakeFiles/test_vpr.dir/test/test_read_xml_noc_traffic_flows_file.cpp.o.d"
+  "CMakeFiles/test_vpr.dir/test/test_setup_noc.cpp.o"
+  "CMakeFiles/test_vpr.dir/test/test_setup_noc.cpp.o.d"
+  "CMakeFiles/test_vpr.dir/test/test_vpr.cpp.o"
+  "CMakeFiles/test_vpr.dir/test/test_vpr.cpp.o.d"
+  "CMakeFiles/test_vpr.dir/test/test_vpr_constraints.cpp.o"
+  "CMakeFiles/test_vpr.dir/test/test_vpr_constraints.cpp.o.d"
+  "CMakeFiles/test_vpr.dir/test/test_xy_routing.cpp.o"
+  "CMakeFiles/test_vpr.dir/test/test_xy_routing.cpp.o.d"
+  "test_vpr"
+  "test_vpr.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/test_vpr.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

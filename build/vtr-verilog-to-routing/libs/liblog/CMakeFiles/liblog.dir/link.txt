@@ -1,0 +1,2 @@
+ccache "/usr/bin/gcc-ar-11" cr liblog.a CMakeFiles/liblog.dir/src/log.cpp.o
+ccache "/usr/bin/gcc-ranlib-11" liblog.a
