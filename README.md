@@ -1,61 +1,47 @@
-# Getting Started with OpenFPGA <img src="./docs/source/overview/figures/OpenFPGA_logo.png" width="200" align="right">
-[![Test](https://github.com/lnis-uofu/OpenFPGA/actions/workflows/build.yml/badge.svg)](https://github.com/lnis-uofu/OpenFPGA/actions/workflows/build.yml)
-[![Cell Library Tests](https://github.com/lnis-uofu/OpenFPGA/actions/workflows/cell_lib_test.yml/badge.svg)](https://github.com/lnis-uofu/OpenFPGA/actions/workflows/cell_lib_test.yml)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Documentation Status](https://readthedocs.org/projects/openfpga/badge/?version=master)](https://openfpga.readthedocs.io/en/master/?badge=master)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/lnis-uofu/OpenFPGA/master?urlpath=vscode)
-
-Version: see [`VERSION.md`](VERSION.md)
-
-## Introduction
-
-The award-winning OpenFPGA framework is the **first open-source FPGA IP generator with silicon proofs** supporting highly-customizable FPGA architectures. OpenFPGA provides complete EDA support for customized FPGAs, including Verilog-to-bitstream generation and self-testing verification. OpenFPGA opens the door to democratizing FPGA technology and EDA techniques with agile prototyping approaches and constantly evolving EDA tools for chip designers and researchers.
-
-**If this is your first time working with OpenFPGA, we strongly **recommend you watch the** [introduction video about OpenFPGA](https://youtu.be/ocODUGcYGqo)**
-
-A quick overview of OpenFPGA tools can be found [**here**](https://openfpga.readthedocs.io/en/master/tutorials/getting_started/tools/).
-We also recommend potential users check out the summary of [**technical capabilities**](https://openfpga.readthedocs.io/en/master/overview/tech_highlights/#) before compiling.
-
-**Before asking for help, please checkout the** [Frequently Asked Questions](https://github.com/lnis-uofu/OpenFPGA/discussions/937)
-
-## Compilation
-
-**A tutorial **video about **how to compile** can be** found [here](https://youtu.be/F9sMRmDewM0)**
-
-Detailed guidelines are available at [**compilation guidelines**](https://openfpga.readthedocs.io/en/master/tutorials/getting_started/compile/).
-Before starting, we strongly recommend you read the required dependencies and ensure that they are correctly installed.
-It also includes detailed information about the docker image.
-
-## Documentation
-
-OpenFPGA's [full documentation](https://openfpga.readthedocs.io/en/master/) includes tutorials, descriptions of the design flow, and tool options.
-
-## Tutorials
-
-You can find a set of [tutorials](https://openfpga.readthedocs.io/en/master/tutorials/), with which you get familiar with the tool and use OpenFPGA for various purposes.
-
-## Backward Compatibility
-
-If you were using an old version of OpenFPGA and are now interested to move to the latest version, please check out the [developer guidelines](https://openfpga.readthedocs.io/en/master/dev_manual/back_compatibile).
-
-## License
-
-All the codes are under MIT license, with the exception of submodules, e.g., VTR, Yosys and Yosys-plugin, which are distributed under its own (permissive) terms. See their full license for details.
-
-## How to Cite
-
-Please use the following paper as a general citation for OpenFPGA:
-
-X. Tang, E. Giacomin, B. Chauviere, A. Alacchi and P. -E. Gaillardon, "OpenFPGA: An Open-Source Framework for Agile Prototyping Customizable FPGAs," in IEEE Micro, vol. 40, no. 4, pp. 41-48, 1 July-Aug. 2020, doi: 10.1109/MM.2020.2995854.
-
-Bibtex:
-
+## Steps for using OpenFPGA to generate bitstream for SOFA FPGA fabric 
+1. Clone this repo
+   ```
+   git clone https://github.com/NouranAbdelaziz/OpenFPGA.git
+   ```
+   Note: this repo is a fork of [OpenFPGA](https://github.com/lnis-uofu/OpenFPGA) which contains prebuilt files, because the current version of OpenFPGA generates a wrong bitstream for SOFA. 
+2. Switch to SOFA branch
+   ```
+   git checkout SOFA
+   ```
+3. Place the rtl design inside [this](https://github.com/NouranAbdelaziz/OpenFPGA/tree/SOFA/openfpga_flow/benchmarks/micro_benchmark) directory ```OpenFPGA/openfpga_flow/benchmarks/micro_benchmark``` where also you can find other example designs
+4. Create a .pcf file for the design and place in [this](https://github.com/NouranAbdelaziz/OpenFPGA/tree/SOFA/openfpga_flow/tasks/SOFA_tasks/pcf_files) directory ```OpenFPGA/openfpga_flow/tasks/SOFA_tasks/pcf_files```. This is an example of a pcf file:
 ```
-@ARTICLE{9098028,  author={Tang, Xifan and Giacomin, Edouard and Chauviere, Baudouin and Alacchi, Aurélien and Gaillardon, Pierre-Emmanuel},  journal={IEEE Micro},   title={OpenFPGA: An Open-Source Framework for Agile Prototyping Customizable FPGAs},   year={2020},  volume={40},  number={4},  pages={41-48},  doi={10.1109/MM.2020.2995854}}
+set_io operand_A[0] gfpga_pad_io_soc_in[46]
+set_io operand_A[1] gfpga_pad_io_soc_in[45]
+set_io operand_A[2] gfpga_pad_io_soc_in[44]
+set_io operand_A[3] gfpga_pad_io_soc_in[43]
+
+set_io operand_B[0] gfpga_pad_io_soc_in[42]
+set_io operand_B[1] gfpga_pad_io_soc_in[41]
+set_io operand_B[2] gfpga_pad_io_soc_in[40]
+set_io operand_B[3] gfpga_pad_io_soc_in[39]
+
+set_io operation[0] gfpga_pad_io_soc_in[37]
+set_io operation[1] gfpga_pad_io_soc_in[36]
+
+set_io result[0] gfpga_pad_io_soc_out[127]
+set_io result[1] gfpga_pad_io_soc_out[125]
+set_io result[2] gfpga_pad_io_soc_out[123]
+set_io result[3] gfpga_pad_io_soc_out[122]
 ```
-
-A list of related publications can be found [here](https://openfpga.readthedocs.io/en/master/reference/).
-
-## Contributing to OpenFPGA
-
-Please read the [contributor guidelines](https://openfpga.readthedocs.io/en/master/dev_manual/contributor_guide) if you would like to contribute to OpenFPGA.
+Important Notes: 
+* If you didn't create a pcf file, the design ports to be assigned to random FPGA ios. 
+* OpenFPGA can detect the clk port in the design and connect it to the FPGA clk automatically.
+* If you are using SOFA for clear and blizzard , you can find the IO mapping in this [sheet](https://docs.google.com/spreadsheets/d/1uOKmR7bjrC94i442PaVSnYtZpS0WyItzQ1jk-dcR4PQ/edit#gid=1991726657)  
+       
+5. You should change some variables in the ``task.conf`` file you can find inside [this](https://github.com/NouranAbdelaziz/OpenFPGA/tree/SOFA/openfpga_flow/tasks/SOFA_tasks/config) directory ``OpenFPGA/openfpga_flow/tasks/SOFA_tasks/config`` . This file points to all the files we will need like the openFPGA command files , the FPGA architecture xml files, the design to be implemented on the fabric , as well as the pin constraints file of the design. 
+Make sure to change the following in ``task.conf`` according to the design:
+    - In ``[OpenFPGA_SHELL]``, change ``openfpga_pcf`` variable to point to pcf file of the design 
+    - In ``[OpenFPGA_SHELL]``, change ``openfpga_vpr_fix_pins_file`` variable to the name and path of the .place file which will be generated
+    - In ``[BENCHMARKS]``, change ``bench0`` to point to the path of the verilog file/s of the design you want to implement 
+    - In ``[SYNTHESIS_PARAM]`` change ``bench0_top`` to be the name of the top module of the design 
+6. After placing the rtl and pcf and editing task.conf, you should just run 
+```
+cd OpenFPGA
+python3 openfpga_flow/scripts/run_fpga_task.py SOFA_tasks
+```
