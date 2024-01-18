@@ -46,9 +46,11 @@ Make sure to change the following in ``task.conf`` according to the design:
 cd OpenFPGA
 python3 openfpga_flow/scripts/run_fpga_task.py SOFA_tasks
 ```
+7. You will find all the files related to the run in a folder inside the task in the directory ``OpenFPGA/openfpga_flow/tasks/SOFA_tasks/run_xx`` . It will contain all results like the fabric src files, the synthesized design, a testbech , the bitstream, and the io_mapping.
+   
 ## VPR and Yosys results for different designs   
 
-|   Design        | clb_blocks  | io_blocks | cells | $_DFF_P_ | $lut |
+|   Design        | clb_blocks  | io_blocks | cells | DFF_P | lut |
 | --------------- | ----------- | --------- |-------|----------|------|
 | [fpga_ram8x20](https://github.com/NouranAbdelaziz/OpenFPGA/blob/SOFA/openfpga_flow/benchmarks/micro_benchmark/fpga_ram8x20.v)    | 41          | 23        | 484 | 168 | 316 |
 | [fpga_ram8x16](https://github.com/NouranAbdelaziz/OpenFPGA/blob/SOFA/openfpga_flow/benchmarks/micro_benchmark/fpga_ram8x16.v)    | 33          | 22        | 388 | 136 | 252 |
