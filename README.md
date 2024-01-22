@@ -1,6 +1,8 @@
 # SOFA bitstream generation 
-SOFA (Skywater Opensource FPGAs) are a series of open-source FPGA IPs using the open-source Skywater 130nm PDK and OpenFPGA framework. You can know more about it in [here](https://github.com/lnis-uofu/SOFA/tree/master). This repo is a guidance of how to generate bitstream for designs to be implmeneted on [FPGA88_SOFA_A](https://github.com/lnis-uofu/SOFA/tree/master/SOFA_A/FPGA88_SOFA_A) which is an embedded FPGA used in [CLEAR](https://github.com/efabless/clear). CLEAR is an open source FPGA ASIC which integrates the  eFPGA macro, FPGA88_SOFA_A, into [Caravel](https://github.com/efabless/caravel).
+SOFA (Skywater Opensource FPGAs) are a series of open-source FPGA IPs using the open-source [Skywater 130nm](https://github.com/google/skywater-pdkv) PDK and [OpenFPGA](https://github.com/lnis-uofu/OpenFPGA) framework. You can know more about it in [here](https://github.com/lnis-uofu/SOFA/tree/master). This repo is a guidance of how to generate bitstream for designs to be implmeneted on [FPGA88_SOFA_A](https://github.com/lnis-uofu/SOFA/tree/master/SOFA_A/FPGA88_SOFA_A) which is an embedded FPGA used in [CLEAR](https://github.com/efabless/clear). CLEAR is an open source FPGA ASIC which integrates the  eFPGA macro, FPGA88_SOFA_A, into [Caravel](https://github.com/efabless/caravel).
 
+ Note: this repo is a fork of [OpenFPGA](https://github.com/lnis-uofu/OpenFPGA) which contains prebuilt version of it, because the current version of OpenFPGA generates a wrong bitstream for FPGA88_SOFA_A. 
+ 
 ## FPGA88_SOFA_A Architecture 
 * It consists of 8x8 CLB (Configurable Logic Block) matrix, which makes a total of 64 CLBs
 * Each CLB contains 6 LUTs (LookUp Tables) and 6 FF (FlipFlops) which makes a total of 384 LUTs and 384 FFs
@@ -11,7 +13,7 @@ SOFA (Skywater Opensource FPGAs) are a series of open-source FPGA IPs using the 
    ```
    git clone https://github.com/NouranAbdelaziz/OpenFPGA.git
    ```
-   Note: this repo is a fork of [OpenFPGA](https://github.com/lnis-uofu/OpenFPGA) which contains prebuilt files, because the current version of OpenFPGA generates a wrong bitstream for SOFA. 
+  
 2. Switch to SOFA branch
    ```
    git checkout SOFA
