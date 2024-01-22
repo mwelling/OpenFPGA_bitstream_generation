@@ -40,7 +40,7 @@ set_io result[2] gfpga_pad_io_soc_out[123]
 set_io result[3] gfpga_pad_io_soc_out[122]
 ```
 Important Notes: 
-*Change ``operand_A`` , ``operand_B``, ``operation``, and ``result`` to the ports of your rtl design  
+* Change ``operand_A`` , ``operand_B``, ``operation``, and ``result`` to the ports of your rtl design.  
 * If you didn't create a pcf file, the design ports to be assigned to random FPGA ios. 
 * OpenFPGA can detect the clk port in the design and connect it to the FPGA clk automatically.
 * If you are using SOFA for clear and blizzard , you can find the IO mapping in this [sheet](https://docs.google.com/spreadsheets/d/1uOKmR7bjrC94i442PaVSnYtZpS0WyItzQ1jk-dcR4PQ/edit#gid=1991726657)  
