@@ -11,7 +11,7 @@ SOFA (Skywater Opensource FPGAs) are a series of open-source FPGA IPs using the 
 ## Steps for using OpenFPGA to generate bitstream for SOFA FPGA fabric 
 1. Clone this repo
    ```
-   git clone https://github.com/NouranAbdelaziz/OpenFPGA.git
+   git clone https://github.com/efabless/OpenFPGA_bitstream_generation.git
    ```
   
 2. Switch to SOFA branch
