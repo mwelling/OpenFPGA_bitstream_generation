@@ -18,8 +18,8 @@ SOFA (Skywater Opensource FPGAs) are a series of open-source FPGA IPs using the 
    ```
    git checkout SOFA
    ```
-3. Place the rtl design inside [this](https://github.com/NouranAbdelaziz/OpenFPGA/tree/SOFA/openfpga_flow/benchmarks/micro_benchmark) directory ```OpenFPGA/openfpga_flow/benchmarks/micro_benchmark``` where also you can find other example designs
-4. Create a .pcf file for the design and place in [this](https://github.com/NouranAbdelaziz/OpenFPGA/tree/SOFA/openfpga_flow/tasks/SOFA_tasks/pcf_files) directory ```OpenFPGA/openfpga_flow/tasks/SOFA_tasks/pcf_files```. This is an example of a pcf file for [ALU_4bits](https://github.com/NouranAbdelaziz/OpenFPGA/blob/SOFA/openfpga_flow/benchmarks/micro_benchmark/ALU_4bits.v):
+3. Place the rtl design inside [this](https://github.com/NouranAbdelaziz/OpenFPGA/tree/SOFA/openfpga_flow/benchmarks/micro_benchmark) directory ```OpenFPGA_bitstream_generation/openfpga_flow/benchmarks/micro_benchmark``` where also you can find other example designs
+4. Create a .pcf file for the design and place in [this](https://github.com/NouranAbdelaziz/OpenFPGA/tree/SOFA/openfpga_flow/tasks/SOFA_tasks/pcf_files) directory ```OpenFPGA_bitstream_generation/openfpga_flow/tasks/SOFA_tasks/pcf_files```. This is an example of a pcf file for [ALU_4bits](https://github.com/NouranAbdelaziz/OpenFPGA/blob/SOFA/openfpga_flow/benchmarks/micro_benchmark/ALU_4bits.v):
 ```
 set_io operand_A[0] gfpga_pad_io_soc_in[46]
 set_io operand_A[1] gfpga_pad_io_soc_in[45]
@@ -45,7 +45,7 @@ Important Notes:
 * OpenFPGA can detect the clk port in the design and connect it to the FPGA clk automatically.
 * If you are using SOFA for clear and blizzard , you can find the IO mapping in this [sheet](https://docs.google.com/spreadsheets/d/1uOKmR7bjrC94i442PaVSnYtZpS0WyItzQ1jk-dcR4PQ/edit#gid=1991726657)  
        
-5. You should change some variables in the ``task.conf`` file you can find inside [this](https://github.com/NouranAbdelaziz/OpenFPGA/tree/SOFA/openfpga_flow/tasks/SOFA_tasks/config) directory ``OpenFPGA/openfpga_flow/tasks/SOFA_tasks/config`` . This file points to all the files we will need like the openFPGA command files , the FPGA architecture xml files, the design to be implemented on the fabric , as well as the pin constraints file of the design. 
+5. You should change some variables in the ``task.conf`` file you can find inside [this](https://github.com/NouranAbdelaziz/OpenFPGA/tree/SOFA/openfpga_flow/tasks/SOFA_tasks/config) directory ``OpenFPGA_bitstream_generation/openfpga_flow/tasks/SOFA_tasks/config`` . This file points to all the files we will need like the openFPGA command files , the FPGA architecture xml files, the design to be implemented on the fabric , as well as the pin constraints file of the design. 
 Make sure to change the following in ``task.conf`` according to the design:
     - In ``[OpenFPGA_SHELL]``, change ``openfpga_pcf`` variable to point to pcf file of the design 
     - In ``[OpenFPGA_SHELL]``, change ``openfpga_vpr_fix_pins_file`` variable to the name and path of the .place file which will be generated
@@ -54,10 +54,10 @@ Make sure to change the following in ``task.conf`` according to the design:
 
 6. After placing the rtl and pcf and editing task.conf, you should just run 
 ```
-cd OpenFPGA
+cd OpenFPGA_bitstream_generation
 python3 openfpga_flow/scripts/run_fpga_task.py SOFA_tasks
 ```
-7. You will find all the files related to the run in a folder inside the task in the directory ``OpenFPGA/openfpga_flow/tasks/SOFA_tasks/run_xx`` . It will contain all results like the fabric src files, the synthesized design, a testbech , the bitstream, and the io_mapping.
+7. You will find all the files related to the run in a folder inside the task in the directory ``OpenFPGA_bitstream_generation/openfpga_flow/tasks/SOFA_tasks/run_xx`` . It will contain all results like the fabric src files, the synthesized design, a testbech , the bitstream, and the io_mapping.
    
 ## VPR and Yosys results for different designs   
 
