@@ -1,0 +1,8 @@
+set_io led[2] gfpga_pad_io_soc_out[126]
+set_io led[3] gfpga_pad_io_soc_out[125]
+set_io led[4] gfpga_pad_io_soc_out[124]
+set_io led[5] gfpga_pad_io_soc_out[123]
+set_io led[6] gfpga_pad_io_soc_out[122]
+set_io led[7] gfpga_pad_io_soc_out[121]
+set_io led[8] gfpga_pad_io_soc_out[120]
+set_io led[9] gfpga_pad_io_soc_out[119]
