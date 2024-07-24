@@ -1,4 +1,4 @@
-module fpga_pwm8 (
+module fpga_pwm (
     input       clk,
     input [7:0] duty,
     output      pwm
